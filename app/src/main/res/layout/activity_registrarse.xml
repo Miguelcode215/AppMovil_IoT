@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse"
+    android:background="@color/rojo"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_icono"
+        android:layout_gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="proceso de... \nREGISTER"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/txt_correo_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/txt_Nombre_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/txt_Telefono_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/txt_contraseña_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/txt_cargo_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cargo"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="10dp"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="REGISTRAR"
+                    android:backgroundTint="@color/rojo"
+                    android:layout_marginStart="20dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:text="CANCELAR"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="20dp"/>
+            </GridLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
