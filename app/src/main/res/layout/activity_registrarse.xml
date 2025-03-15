@@ -10,15 +10,18 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_icono"
-        android:layout_gravity="center"/>
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_logo"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="20dp">
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/white">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,11 +33,12 @@
                 android:layout_height="wrap_content"
                 android:text="proceso de... \nREGISTER"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:fontFamily="sans-serif-black"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"/>
 
             <EditText
                 android:id="@+id/txt_correo_R"
@@ -43,7 +47,8 @@
                 android:hint="Correo"
                 android:paddingStart="16dp"
                 android:textColor="@color/black"
-                android:layout_marginTop="15dp"
+                android:textColorHint="@color/gris"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="10dp"/>
 
@@ -54,6 +59,7 @@
                 android:hint="Nombre"
                 android:paddingStart="16dp"
                 android:textColor="@color/black"
+                android:textColorHint="@color/gris"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="10dp"/>
@@ -65,6 +71,7 @@
                 android:hint="Telefono"
                 android:paddingStart="16dp"
                 android:textColor="@color/black"
+                android:textColorHint="@color/gris"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="10dp"/>
@@ -76,6 +83,7 @@
                 android:hint="Contraseña"
                 android:paddingStart="16dp"
                 android:textColor="@color/black"
+                android:textColorHint="@color/gris"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="10dp"/>
@@ -87,6 +95,7 @@
                 android:hint="Cargo"
                 android:paddingStart="16dp"
                 android:textColor="@color/black"
+                android:textColorHint="@color/gris"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="10dp"/>
@@ -96,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:columnCount="2"
                 android:rowCount="1"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="40dp">
 
                 <Button
@@ -106,7 +115,8 @@
                     android:layout_row="0"
                     android:text="REGISTRAR"
                     android:backgroundTint="@color/rojo"
-                    android:layout_marginStart="20dp"/>
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/white"/>
 
                 <Button
                     android:layout_width="wrap_content"
@@ -116,7 +126,8 @@
                     android:text="CANCELAR"
                     android:backgroundTint="@color/black"
                     android:layout_marginStart="50dp"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"/>
             </GridLayout>
         </LinearLayout>
 
