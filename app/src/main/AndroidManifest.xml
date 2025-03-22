@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AppMovil_IoT"
         tools:targetApi="31">
         <activity
+            android:name=".incidencia"
+            android:exported="false" />
+        <activity
+            android:name=".incidencias"
+            android:exported="false" />
+        <activity
             android:name=".Registrarse"
             android:exported="false" />
         <activity

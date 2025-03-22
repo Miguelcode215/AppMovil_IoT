@@ -3,6 +3,7 @@ package com.example.appmovil_iot;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -25,12 +26,21 @@ public class Loguin extends AppCompatActivity {
         });
 
         TextView Registro = findViewById(R.id.btn_registrar);
+        Button ingresar = findViewById(R.id.btn_ingresar);
 
         Registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent registro = new Intent(Loguin.this, Registrarse.class);
                 startActivity(registro);
+            }
+        });
+
+        ingresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ingreso = new Intent(Loguin.this, incidencia.class);
+                startActivity(ingreso);
             }
         });
     }
